@@ -1,11 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 import  navbar  from '../utils/navbar'
 
 export const Root = () => {
   return (
     <div>
     <BrowserRouter>
+    <Navbar/>
     <Routes>
       {
         navbar.map(({id,path,element})=>{

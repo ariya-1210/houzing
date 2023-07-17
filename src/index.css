@@ -11,4 +11,10 @@ body{
     --colorSecondary:#696969;
     /* backgraund */
     --backgraundPrimary:#0061DF;
+    /* padding */
+    --padding: 0 130px;
+
+}
+pp{
+
 }
