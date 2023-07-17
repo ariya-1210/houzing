@@ -21,6 +21,8 @@ align-items: center;
 
 `
 const Logo=styled(logo)`
+margin-right:12px;
+
 `
 
 export {Container, Wrapper,Section, Logo}
