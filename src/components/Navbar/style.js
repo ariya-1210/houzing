@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {ReactComponent as logo} from "../../assets/icon/logo.svg"
 
@@ -22,7 +23,15 @@ align-items: center;
 `
 const Logo=styled(logo)`
 margin-right:12px;
-
+`
+const NavItem=styled(NavLink)`
+margin-left:20px ;
+color: #fff;
+text-decoration:none;
+.active{
+    color:red;
+}
 `
 
-export {Container, Wrapper,Section, Logo}
+
+export {Container, Wrapper,Section, Logo, NavItem}

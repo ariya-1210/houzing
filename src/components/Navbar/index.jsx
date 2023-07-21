@@ -1,17 +1,34 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { Container, Logo, Section, Wrapper } from './style'
+import { Container, Logo, Section, Wrapper,NavItem  } from './style'
+import navbar from '../../utils/navbar'
+import { useNavigate } from 'react-router-dom'
 
 export const Navbar = () => {
+  const navigate=useNavigate()
   return (
     <Container>
       <Wrapper>
-        <Section><Logo/><h3>Houzing</h3></Section>
+        <Section onClick={()=>{<navigate to='./home'/>}}><Logo/><h3>Houzing</h3></Section>
         <Section>
-          <NavLink to={'/home'} >Home</NavLink>
-          <NavLink to={'/properties'}  >Properties</NavLink>
+          {
+            navbar.map(({path,title},index)=>{
+              return(
+                <NavItem
+                // style={({isActive,isPending})=>{
+                //   return{
+                //     color:isPending ? "red" : "",
+                //   }
+                // }}
+
+                
+                 key={index} to={path} >{title}</NavItem>
+              )
+            })
+          }
         </Section>
-        <Section>1</Section>
+        <Section>
+          <button>Sign In</button>
+        </Section>
       </Wrapper>
     </Container>
   )
