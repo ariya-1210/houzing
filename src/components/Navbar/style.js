@@ -9,6 +9,7 @@ min-width:1440px; */
 const Main=styled.div`
 background:var(--colorPrimary);
 color:#fff;
+
 `
 
 const Wrapper=styled.div`
@@ -17,7 +18,9 @@ display:flex;
 max-width:1440px;
 justify-content: space-between;
 align-items: center;
-height:64;`
+height:64;
+margin: auto;
+`
 
 const Section=styled.div`
 display:flex;

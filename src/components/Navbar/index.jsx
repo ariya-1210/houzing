@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Logo, Section, Wrapper,NavItem,Main  } from './style'
 import navbar from '../../utils/navbar'
 import { Outlet, useNavigate } from 'react-router-dom'
+import Button from '../Generic/Button'
 
 export const Navbar = () => {
   const navigate=useNavigate()
@@ -21,7 +22,7 @@ export const Navbar = () => {
           }
         </Section>
         <Section>
-          <button>Sign In</button>
+          <Button>Sign In</Button>
         </Section>
       </Wrapper>
              
