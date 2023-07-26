@@ -1,26 +1,20 @@
 import React from 'react'
-import { Container, Logo, Section, Wrapper,NavItem  } from './style'
+import { Container, Logo, Section, Wrapper,NavItem,Main  } from './style'
 import navbar from '../../utils/navbar'
-import { useNavigate } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 
 export const Navbar = () => {
   const navigate=useNavigate()
   return (
     <Container>
+      <Main>
       <Wrapper>
-        <Section onClick={()=>{<navigate to='./home'/>}}><Logo/><h3>Houzing</h3></Section>
+        <Section  onClick={()=>{navigate('/home')}} ><Logo/><h3>Houzing</h3></Section>
         <Section>
           {
             navbar.map(({path,title},index)=>{
               return(
-                <NavItem
-                // style={({isActive,isPending})=>{
-                //   return{
-                //     color:isPending ? "red" : "",
-                //   }
-                // }}
-
-                
+                <NavItem className={({isActive})=>isActive && 'active'}
                  key={index} to={path} >{title}</NavItem>
               )
             })
@@ -30,6 +24,9 @@ export const Navbar = () => {
           <button>Sign In</button>
         </Section>
       </Wrapper>
+             
+      </Main>
+      <Outlet/>
     </Container>
   )
 }

@@ -7,8 +7,8 @@ export const Root = () => {
   return (
     <div>
     <BrowserRouter>
-    <Navbar/>
     <Routes>
+      <Route element={<Navbar/>}>
       {
         navbar.map(({id,path,element})=>{
           return(
@@ -16,6 +16,7 @@ export const Root = () => {
           )
         })
       }
+      </Route>
       <Route path='/' element={<Navigate to='/home'/>}/>
       <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
     </Routes>
