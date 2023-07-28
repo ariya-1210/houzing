@@ -25,7 +25,7 @@ margin: auto;
 const Section=styled.div`
 display: flex;
 align-items: center;
-cursor: ${({logo})=>logo&& 'pointer'};
+
 `
 const Logo=styled(logo)`
 margin-right:12px;

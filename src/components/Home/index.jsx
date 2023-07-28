@@ -7,7 +7,7 @@ export const Home = () => {
     <Container>
        Home Houzing
        <Button type={'light'}>Salom</Button>
-       <Input placeholder={'enter name'} width={'200px'} />
+       <Input placeholder={'Enter name'} width={'200px'} />
     </Container>
   )
 }

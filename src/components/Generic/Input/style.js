@@ -7,7 +7,8 @@ font-weight:400;
 font-size: 14px;
 border-radius: 2px;
 outline:none;
-border:1px solid #E6E9EC
+border:1px solid #E6E9EC;
+padding-left:10px;
 `
 
 export {Container}
