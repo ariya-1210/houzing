@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family:sans-serif;
 }
 :root{
     /* color */
@@ -13,7 +13,4 @@ body{
     --colorSecondary:#696969;
     /* backgraund */
     --backgraundPrimary:#0061DF;
-    /* padding */
-    --padding: 10px 130px;
-
 }
