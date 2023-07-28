@@ -1,12 +1,25 @@
 import React from 'react'
-import { Container } from '../style'
+import { Container } from './style'
 
-const Input = () => {
+export const Input = ({
+  height,
+  width,
+  onChange,
+  placeholder,
+  name,
+  value,
+  defoultValue
+}) => {
   return (
-    <Container>
-      Input
-    </Container>
+    <Container 
+    onChange={onChange} 
+    height={height}
+    width={width}
+    placeholder={placeholder}
+    value={value}
+    defoultValue={defoultValue}
+    name={name}
+    />
   )
 }
-
 export default Input
