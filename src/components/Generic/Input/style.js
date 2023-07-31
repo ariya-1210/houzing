@@ -8,7 +8,17 @@ font-size: 14px;
 border-radius: 2px;
 outline:none;
 border:1px solid #E6E9EC;
-padding-left:10px;
+padding-left:${({logo})=>logo ? '35px': '10px'};
+`
+const Wrapper=styled.div`
+width: fit-content;
+display:flex;
+align-items:center;
+position:relative;
+`
+const Icon=styled.div`
+position:absolute;
+margin-left:10px;
 `
 
-export {Container}
+export {Container,Wrapper,Icon}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from './style'
+import { Container, Icon, Wrapper } from './style'
 
 export const Input = ({
   height,
@@ -8,9 +8,12 @@ export const Input = ({
   placeholder,
   name,
   value,
-  defoultValue
+  defoultValue,
+  logo
 }) => {
   return (
+    <Wrapper>
+      <Icon>{logo}</Icon>
     <Container 
     onChange={onChange} 
     height={height}
@@ -19,7 +22,9 @@ export const Input = ({
     value={value}
     defoultValue={defoultValue}
     name={name}
+    logo={logo}
     />
+    </Wrapper>
   )
 }
 export default Input

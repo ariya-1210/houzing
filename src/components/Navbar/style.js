@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as logo } from "../../assets/icon/logo.svg";
+import { ReactComponent as logo } from "../../assets/icon/logo.svg"
 import { NavLink } from "react-router-dom";
 
 
