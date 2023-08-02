@@ -9,7 +9,24 @@ export const Filter = () => {
     key: '1',
     label: (
       <Wrapper>
-        <Content>2143241654</Content>
+        <div className="subTitle">Address</div>
+        <Content>
+          <Input placeholder={'Country'} />
+          <Input placeholder={'Region'} />
+          <Input placeholder={'City'} />
+          <Input placeholder={'Zip_code'} />
+        </Content>
+        <div className="subTitle">Apartment info</div>
+        <Content>
+          <Input placeholder={'Rooms'} />
+          <Input placeholder={'Size'} />
+          <Input placeholder={'Sorts'} />
+        </Content>
+        <div className="subTitle">Price</div>
+        <Content>
+          <Input placeholder={'Min_Price'} />
+          <Input placeholder={'Max_Price'} />
+        </Content>
       </Wrapper>
     ),
   }
@@ -28,7 +45,7 @@ export const Filter = () => {
         <Button width={'130px'} type={'light'}>
           <Icon.Setting/>Advanced</Button>
         </div>
-      
+
       </Dropdown>
       
       <Button width={'130px'} type={'primary'} ><Icon.Search/>Search</Button>
