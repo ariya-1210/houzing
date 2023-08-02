@@ -21,4 +21,13 @@ margin-right:10px;
 Icon.Setting=styled(setting)`
 margin-right:10px;
 `
-export {Container, Icon}
+const Wrapper =styled.div`
+width: 920px;
+height: 420px;
+
+`
+const Content =styled.div`
+
+`
+
+export {Container, Icon, Wrapper, Content}
