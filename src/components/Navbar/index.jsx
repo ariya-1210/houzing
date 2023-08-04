@@ -4,6 +4,7 @@ import {navbar} from '../../utils/navbar'
 import { Outlet, useNavigate } from 'react-router-dom'
 import Button from '../Generic/Button'
 import Filter from '../Filter'
+import CarouselCard from '../CarouselCard'
 
 export const Navbar = () => {
   const navigate=useNavigate()
@@ -30,6 +31,7 @@ export const Navbar = () => {
         
       </Main>
       <Filter/>
+      <CarouselCard/>
       <Outlet/>
     </Container>
   )
