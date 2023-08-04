@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Content, Icon, Wrapper } from './style'
 import { Button, Input } from '../Generic'
 import { Dropdown } from 'antd'
 
 export const Filter = () => {
+
+  const [open,setOpen]=useState(false)
+  const onOpenChange=()=>
+  setOpen(!open)
   const items = [
   {
     key: '1',
@@ -36,7 +40,10 @@ export const Filter = () => {
       <Input logo={<h4><Icon.Houses/></h4>} height={'44px'} width={'830px'}
       placeholder={'Enter ypur address, neighborhood, city, or ZIP code'}/>
       <Dropdown
-        menu={{items,}}
+        menu={{items}}
+        trigger={'click'}
+        onOpenChange={onOpenChange}
+        open={open}
         placement="bottomRight"
         arrow
       >
