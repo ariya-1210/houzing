@@ -23,7 +23,7 @@ const Navbar = () => {
 
             </Section>
             <Section logo>
-              <Button onClick={()=>navigate('signin')} type={'dark'}>Log In</Button>
+              <Button className='button' onClick={()=>navigate('signin')} type={'dark'}>Log In</Button>
             </Section>
         </Wrapper>
         <Outlet/>

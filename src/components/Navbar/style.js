@@ -12,10 +12,12 @@ const Wrapper=styled.div`
 padding: var(--padding);
 display: flex;
 justify-content: space-between;
-align-items: center;
 height: 64px;
+margin: 0 220px;
+/* width: 100%; */
 `
 const Section=styled.div`
+margin-right: 20px;
 display: flex;
 justify-content: center;
 align-items: center;

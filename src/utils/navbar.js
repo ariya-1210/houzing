@@ -26,5 +26,13 @@ export const navbar=[
         element:<h1>Sign In</h1>,
         private:false,
         hidden:true
+    },
+    {
+        id:useId,
+        title:'Contacts',
+        path:'/contacts',
+        element:<h1>Contacts</h1>,
+        private:false,
+        hidden:false
     }
 ]
