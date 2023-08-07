@@ -10,3 +10,4 @@ export const Properties = () => {
 }
 
 export default Properties
+y

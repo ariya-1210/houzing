@@ -1,13 +1,10 @@
 import React from 'react'
 import { Container } from './style'
-import {Button,Input} from '../Generic'
 
 export const Home = () => {
   return (
     <Container>
        Home Houzing
-       <Button type={'light'}>Salom</Button>
-       <Input placeholder={'Enter name'} width={'200px'} />
     </Container>
   )
 }
