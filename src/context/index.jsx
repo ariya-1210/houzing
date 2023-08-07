@@ -3,14 +3,16 @@ import React from 'react'
 import PropertiesContext from './properties'
 
 
-
-export const RootContext = ({children}) => {
+const RootContext = ({children}) => {
   return (
-
-        <PropertiesContext>
-        {children}
-        </PropertiesContext>
-  
+    <>
+      <PropertiesContext>
+      {children}
+      </PropertiesContext>
+       
+      
+      
+    </>
   )
 }
 

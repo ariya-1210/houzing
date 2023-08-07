@@ -1,5 +1,4 @@
-import Properties from '../../components/Properties'
+import Properties from "../../Components/Properties"
 
-const PropertiesPage = () => <Properties/>
-
+export const PropertiesPage=()=><Properties/>
 export default PropertiesPage

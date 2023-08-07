@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container } from './style'
+import CarouselCard from '../Carousel'
 
-export const Home = () => {
+const Home = () => {
   return (
     <Container>
-       Home Houzing
+      <CarouselCard/>  
     </Container>
   )
 }

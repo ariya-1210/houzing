@@ -1,13 +1,12 @@
 import React from 'react'
 import { Container } from './style'
 
-export const Properties = () => {
+const Properties = () => {
   return (
     <Container>
-      Properties
+        Properties
     </Container>
   )
 }
 
 export default Properties
-y
