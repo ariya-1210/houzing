@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Container>
         <Wrapper>
-            <Section onClick={()=>navigate('/home')} bold logo><Logo/> Houzing</Section>
+            <Section onClick={()=>navigate('/home')} bold='600' logo='pointer'><Logo/> Houzing</Section>
             <Section>
             {
                 navbar.map(({path,title,hidden},index)=>{

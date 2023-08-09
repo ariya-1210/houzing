@@ -3,7 +3,7 @@ import { Container, Search, Setting, Houses, Wrapper, Box, Content } from './sty
 import Input from '../Generic/Input'
 import Button from '../Generic/Button'
 import { Dropdown } from 'antd'
-import { click } from '@testing-library/user-event/dist/click'
+// import { click } from '@testing-library/user-event/dist/click'
 
 
 const Filter = () => {

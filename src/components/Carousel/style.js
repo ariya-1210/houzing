@@ -1,32 +1,57 @@
 import styled from "styled-components";
-import {ReactComponent as arrow} from '../../assets/icon/arrow.svg'
-
 
 const Container=styled.div`
 height: 571px;
 position: relative;
 margin-top: 10px;
-
 `
 
-const Arrow=styled(arrow)`
-width: 45px;
-height: 45px;
-border-radius: 50%;
-background: rgba(0,0,0,0.5);
-cursor: pointer;
+const Blur =styled.div`
 position: absolute;
-top: 50%;
-transition: .3s;
-right: ${({left})=>!left && '20px'};
-transform: ${({left})=>left ? 'rotate(0deg)' : 'rotate(180deg)'};
-:hover{
-    background: rgba(0,0,0,0.2);
-}
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-color: rgba(0,0,0,0.5);
 `
-const Image=styled.img`
-width: 1440px;
-height: 571px;
+const Content=styled.div`
+position: absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: #fff;
+`
+Content.Title=styled.h1`
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 48px;`
+
+Content.SubTitle=styled.p`
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+`
+Content.Price=styled.h1`
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 36px;
+`
+const Div=styled.div`
+
 `
 
-export {Container,Arrow,Image}
+const Image=styled.img`
+  width:100%;
+ height:571px;`
+export{Container, Image, Blur, Content, Div}
