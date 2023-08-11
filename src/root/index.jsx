@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { navbar } from '../utils/navbar'
-import Navbar from '../Components/Navbar'
-import Filter from '../Components/Filter'
+import Navbar from '../components/Navbar'
+import Filter from '../components/Filter'
 
 
 

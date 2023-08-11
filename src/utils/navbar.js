@@ -1,5 +1,5 @@
 import useId from "../hooks/useId";
-import HomePage from "../pages/Homepage";
+import HomePage from "../pages/HomePage";
 import PropertiesPage from "../pages/PropertiesPage";
 
 export const navbar=[
