@@ -30,3 +30,11 @@ body{
   color: #999;
   font-size: 30px;
 }
+.info{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696969;
+}

@@ -41,10 +41,10 @@ font-size: 16px;
 line-height: 24px;
 `
 Content.Price=styled.h1`
-font-family: 'Montserrat';
+font-family: sans-serif;
 font-style: normal;
 font-weight: 600;
-font-size: 28px;
+font-size: 38px;
 line-height: 36px;
 `
 const Div=styled.div`

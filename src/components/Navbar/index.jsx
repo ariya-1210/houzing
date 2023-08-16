@@ -4,12 +4,13 @@ import { navbar } from '../../utils/navbar'
 import { Outlet, useNavigate } from 'react-router-dom'
 import Button from '../Generic/Button'
 
-const Navbar = () => {
-  const navigate=useNavigate()
+export const Navbar = () => {
+  const navigate=useNavigate();
   return (
     <Container>
         <Wrapper>
-            <Section onClick={()=>navigate('/home')} bold='600' logo='pointer'><Logo/> Houzing</Section>
+            <Section onClick={()=>navigate('/home')} bold='600' logo='pointer'>
+              <Logo/> Houzing</Section>
             <Section>
             {
                 navbar.map(({path,title,hidden},index)=>{

@@ -3,7 +3,6 @@ import {  Blur, Container, Content, Image,Div } from './style'
 import { Carousel } from 'antd'
 import Home1 from '../../assets/img/house1.webp'
 import Home2 from '../../assets/img/house2.webp'
-import Button from '../Generic/Button'
 
 export const CarouselCard = () => {
     const onChange = (currentSlide) => {
@@ -27,7 +26,7 @@ export const CarouselCard = () => {
     <Content.SubTitle>112 Glenwood Ave Hyde Park, Boston, MA</Content.SubTitle>  
     <Content.Price>$5,250 / mo</Content.Price>  
     <Div>
-    < Button/> 
+
     </Div>
     </Content>
     </Container>
