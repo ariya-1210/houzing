@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <Container>
         <Wrapper>
-            <Section onClick={()=>navigate('/home')} bold='600' logo='pointer'>
+            <Section onClick={()=>navigate('/home')} bold='600' >
               <Logo/> Houzing</Section>
             <Section>
             {
@@ -23,7 +23,7 @@ export const Navbar = () => {
               
 
             </Section>
-            <Section logo>
+            <Section >
               <Button className='button' onClick={()=>navigate('signin')} type={'dark'}>Log In</Button>
             </Section>
         </Wrapper>
@@ -31,5 +31,4 @@ export const Navbar = () => {
     </Container>
   )
 }
-
 export default Navbar

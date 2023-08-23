@@ -22,7 +22,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-weight:${({bold})=>bold&&bold};
-cursor:${({logo})=>logo&&logo};
+
 `
 const Logo=styled(logo)`
 margin-left: 20px;
