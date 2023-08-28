@@ -17,7 +17,7 @@ const Properties = () => {
   return (
     <Container>
       {data.map((value)=>{
-        return  <HouseCard/>
+        return  <HouseCard key={value.id} data={value} />
       })}
     </Container>
   )

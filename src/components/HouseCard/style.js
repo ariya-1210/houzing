@@ -15,6 +15,8 @@ border-radius: 5px;
 const Image=styled.img`
 width: 100%;
 height: 220px;
+min-height: 220px;
+max-width: 220px;
 `
 const Content=styled.div`
 padding:15px;
